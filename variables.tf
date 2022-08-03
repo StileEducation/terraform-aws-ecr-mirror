@@ -10,11 +10,6 @@ variable "aws_account_id" {
   description = "The AWS Account ID where the ECR repository is located."
 }
 
-variable "aws_profile" {
-  description = "The awscli profile name (located in the ~/.aws/credentials file) used to authenticate the ECR login and push (Optional)"
-  default     = ""
-}
-
 variable "ecr_repo_name" {
   description = "The name of the ECR repository being pushed to."
 }
